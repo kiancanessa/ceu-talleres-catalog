@@ -8,19 +8,19 @@ services:
       - "8000:8000"
     volumes:
       - ./backend:/app
+      - /app/venv
     environment:
       - PYTHONUNBUFFERED=1
     command: python manage.py runserver 0.0.0.0:8000
 
   frontend:
-    build: ./frontend
+    image: node:20-alpine
     container_name: ceu_frontend
+    working_dir: /app
     ports:
       - "5173:5173"
     volumes:
       - ./frontend:/app
-      - /app/node_modules
     depends_on:
       - backend
-    environment:
-      - VITE_API_URL=http://localhost:8000
+    command: sh -c "npm install --no-package-lock && npm run dev -- --host 0.0.0.0"

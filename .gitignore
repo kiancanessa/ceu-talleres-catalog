@@ -10,6 +10,8 @@ ENV/
 db.sqlite3
 *.log
 
+package-lock.json
+
 # Django
 *.pot
 *.pyc
@@ -39,3 +41,4 @@ yarn-error.log*
 
 # Docker
 *.log
+.dockerignore
