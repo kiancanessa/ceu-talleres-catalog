@@ -22,11 +22,9 @@ class Taller(models.Model):
         verbose_name_plural = 'Talleres'
     
     def clean(self):
-        # Validación: fecha no puede ser en el pasado
         if self.fecha_inicio and self.fecha_inicio < timezone.now():
             raise ValidationError({'fecha_inicio': 'La fecha no puede ser en el pasado'})
         
-        # Validación: nombre no puede estar vacío
         if not self.nombre or not self.nombre.strip():
             raise ValidationError({'nombre': 'El nombre no puede estar vacío'})
     

@@ -2,17 +2,17 @@ FROM node:20-alpine
 
 WORKDIR /app
 
-# Copiar package files
-COPY package*.json ./
+# Copiar solo package.json (sin package-lock.json)
+COPY package.json ./
 
-# Limpiar caché y instalar dependencias
-RUN npm install --no-package-lock
+# Instalar dependencias sin lockfile
+RUN npm install --no-package-lock --force
 
-# Copiar código
+# Copiar el resto del código
 COPY . .
 
 # Exponer puerto
 EXPOSE 5173
 
-# Comando
-CMD ["npm", "run", "dev", "--", "--host"]
+# Iniciar servidor
+CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0"]
