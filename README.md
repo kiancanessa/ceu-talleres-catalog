@@ -3,7 +3,7 @@
 Sistema de gestión de talleres desarrollado con Django REST Framework y React.
 
 ![CEU](https://img.shields.io/badge/version-1.0.0-blue.svg)
-![Python](https://img.shields.io/badge/Python-3.11-green.svg)
+![Python](https://img.shields.io/badge/Python-3.12-green.svg)
 ![Django](https://img.shields.io/badge/Django-5.0-green.svg)
 ![React](https://img.shields.io/badge/React-18.3-blue.svg)
 
@@ -182,3 +182,4 @@ npm test
 
 
 ⭐️ Si este proyecto te fue útil, considera darle una estrella en GitHub!
+
