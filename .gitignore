@@ -36,3 +36,6 @@ yarn-error.log*
 # Environment variables
 .env
 .env.local
+
+# Docker
+*.log
