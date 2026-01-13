@@ -1,6 +1,6 @@
 # 🎓 CEU Talleres - Catálogo de Talleres
 
-Sistema de gestión de talleres tecnológicos desarrollado con Django REST Framework y React.
+Sistema de gestión de talleres desarrollado con Django REST Framework y React.
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 ![Python](https://img.shields.io/badge/Python-3.12-green.svg)
@@ -275,4 +275,5 @@ Usamos [Conventional Commits](https://www.conventionalcommits.org/):
 - CEU Centro de Especialización 
 
 ⭐️ Si este proyecto te fue útil, ¡considera darle una estrella en GitHub!
+
 
